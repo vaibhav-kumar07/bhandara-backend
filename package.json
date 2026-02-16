@@ -1,0 +1,43 @@
+{
+  "name": "event-management-server",
+  "version": "1.0.0",
+  "description": "Backend API server for Event Management System",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint .",
+    "type-check": "tsc --noEmit"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "keywords": ["express", "typescript", "mongodb", "api"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.18.3",
+    "mongodb": "^6.3.0",
+    "zod": "^3.25.67",
+    "bcryptjs": "^3.0.3",
+    "jsonwebtoken": "^9.0.3",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "express-rate-limit": "^7.1.5",
+    "dotenv": "^16.4.5",
+    "express-validator": "^7.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^22.0.0",
+    "@types/bcryptjs": "^2.4.6",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/cors": "^2.8.17",
+    "typescript": "^5.3.3",
+    "tsx": "^4.7.0",
+    "ts-node": "^10.9.2"
+  }
+}
+
